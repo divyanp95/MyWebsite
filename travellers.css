@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo|Bree+Serif|Courgette|Faster+One|IM+Fell+Great+Primer:400i|Kaushan+Script|Lobster|Niconne|Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+    
+*{
+    box-sizing:border-box;
+}
+
+body,html{
+    width:100%;
+    height:100%;
+    background:whitesmoke;
+    position:relative;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 100%;
+  color:white !important; 
+
+}
+
+
+.navbar-brand{
+    font-family:"Kaushan Script";
+    font-size:2.5rem;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:white !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    border:1px solid white;
+
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    border:1px solid white;
+
+}
+.navbar{
+    transition:.5s;
+}
+.navbar.scrolled{
+    background:navy !important;
+    transition:.5s;
+}
+#myCarousel{
+    max-width:100% !important;
+    background:whitesmoke;
+}
+.carousel-caption
+{
+    font-family: "Kaushan Script";
+    color: white;
+}
+section{
+    padding:30px;
+    position: relative;
+    width:auto;
+}
+#festiv{
+    margin-top:0px;
+}
+#map{
+    margin-top:10px;
+}
+button{
+    position:relative;
+    margin:10px auto !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: navy !important;
+    border-color: navy !important;
+}
+#festiv .img-fluid,
+#places .img-fluid,
+#food .img-fluid{
+    width:100% !important;
+    height:300px !important;
+}
+/*#festiv{
+    background-image:url(images/fest.jpeg);
+    background-repeat: no-repeat;
+    height:auto;
+}
+#places{
+    background-image:url(images/adve.jpeg);
+    background-repeat: no-repeat;
+    height:auto;
+
+}
+#food{
+    background-image:url(images/food1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
+    height:auto;
+
+    
+}*/
+div.title{
+    color:navy;
+    font-family: "Kaushan Script";
+}
+div.title:before{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: navy;
+    bottom: 0;
+    left: 25%;
+    margin-bottom: 8px;
+}
+#art div.title:before{
+    content: " ";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: navy;
+    top: 90px;
+    left: 35%;
+    margin-bottom: 8px;
+}
+div.title h1{
+    font-size:50px;
+}
+#festiv a,
+#places a{
+    text-decoration: none;
+    background-color: transparent;
+    display: inline !important;
+    max-width: 25% !important;
+}
+#food a {
+    text-decoration: none;
+    background-color: transparent;
+    display: inline !important;
+    max-width: 50% !important;
+}
+#food p{
+    color:black;
+}
+
+#festiv div.col-sm-3,
+#places div.col-sm-3{
+    display:inline-block !important;
+    max-width:100% !important;
+}
+#food div.col-sm-6{
+    display:inline-block !important;
+    max-width:50% !important;
+}
+.col-sm-3 .content h3{
+    margin: 0px auto;
+    padding: 0;
+    opacity: 1;
+    font-size: 30px;
+    line-height: 1.5em;
+    transition: 0.5s;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+}
+div.caption h3{
+    font-family: "Bree Serif";
+    color:navy;
+    display: block;
+}
+
+#art .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:0 4px;
+}
+#art .row .column{
+    flex:32%;
+    max-width:32%;
+    padding:0 4px;
+}
+#art .row .column img{
+    margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+div .name{
+    margin-top: -55px;
+    margin-left: 6px;
+    position: relative;
+    display: block;
+    width: 96%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+}
+div .name h5{
+    text-align: center;
+    margin: 0px auto;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+footer p{
+    position: absolute;
+    color: #000;
+    margin: 0px 31%;
+    display: block;
+}
+
+/* RESPONSIVE DESIGN*/
+
+@media (max-width:991px)
+{
+    .container{
+        max-width:90% !important;
+    }
+    #festiv .img-fluid,
+    #places .img-fluid{
+        max-width: 100% !important;
+        height:250px !important;
+    }
+    #festiv a,
+    #places a {
+        max-width: 25% !important;
+    }
+    #festiv div.col-sm-3,
+    #places div.col-sm-3{
+        max-width:100% !important;
+    }
+    
+    
+}
+@media (min-width: 576px) and (max-width: 767px) 
+{
+    
+    #festiv .img-fluid,
+    #places .img-fluid{
+        max-width:100% !important;
+    }
+    #festiv a,
+    #places a {
+        max-width: 50% !important;
+    }
+    #art .row .column{
+        flex:33%;
+        max-width:33%;
+        padding:0 4px;
+    }
+    div .name{
+        margin-top: -35px;
+        margin-left: 6px;
+        position: relative;
+        display: block;
+        width: 92%;
+        height: 30px;
+        
+    }
+    div .name h5{
+        text-align: center;
+        margin: 0px auto;
+        color: white;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+    
+    }
+   
+}
+@media (min-width: 481px) and (max-width: 575px) {
+    #myCarousel{
+        width:100% !important;
+    }
+    #festiv div.col-sm-3,
+    #places div.col-sm-3,
+    #food div.col-sm{
+        max-width:100% !important;
+    }
+    #festiv a,
+    #places a,
+    #food a{
+        max-width: 100% !important;
+    }
+    #art .row .column{
+        flex:100%;
+        max-width:100%;
+        padding:0 4px;
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 480px)
+ { 
+    #myCarousel{
+        width:100% !important;
+        background:whitesmoke;
+    }
+    #festiv a,
+    #places a,
+    #food a {
+        max-width: 100% !important;
+    }
+    #art .row .column{
+        flex:100%;
+        max-width:100%;
+        padding:0 4px;
+    }
+    div.title h1{
+        font-size:30px;
+    }
+    #festiv p,
+    #places p{
+        font-size:12px !important;
+        text-align: justify;
+    }
+    .navbar-brand{
+        font-size:1.8rem !important;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+@media (max-width:319px)
+{
+    #places a,
+    #festiv a,
+    #food a {
+        max-width: 100% !important;
+    }
+    #art .row .column{
+        flex:100%;
+        max-width:100%;
+        padding:0 4px;
+    }
+}
+
+

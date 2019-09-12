@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo|Courgette|IM+Fell+Great+Primer:400i|Kaushan+Script|Lobster|Merriweather+Sans:700i|Niconne|Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bilbo|Bree+Serif|Courgette|Faster+One|IM+Fell+Great+Primer:400i|Kaushan+Script|Lobster|Niconne|Sonsie+One&display=swap');
+
+    
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background:url(images/food1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title{
+    text-align: center;
+    display:block;     
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    margin:0px auto;
+    top:0;
+    background: navy;
+    z-index:2;
+}
+
+.title h2{
+    color:white;
+    font-family:"Kaushan Script";
+    font-size:40px;
+    font-weight:bold;
+    margin:0px auto;
+    word-spacing: 0.2em;
+
+}
+section{
+    position: relative;
+    margin-top: 0px;
+}
+
+h1{
+    font-family:"Kaushan Script";
+    font-size:bold;
+    color:navy;
+    text-align: center;
+}
+#veg h1::before{
+    content: " ";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: navy;
+    left: 35%;
+    bottom: 97%;
+}
+#nonveg h1::before{
+    content: " ";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: navy;
+    left: 35%;
+    bottom: 95%;
+}
+.card-deck {
+    margin: 5px -15px !important;
+    justify-content: space-between !important;
+  }
+  
+  .card-deck .card {
+    margin: 5px -5px!important;
+  }
+  .card-img-top{
+    width:100%;
+    height:220px;
+}
+.card-text{
+  text-align:justify;
+  word-spacing: 0px;
+}
+
+
+/* RESPONSIVE DESIGN*/
+@media (min-width: 320px) and (max-width: 575px) {
+    h1{
+        font-size:1.8rem !important;
+    }
+    #veg h1:before{
+      bottom: 99.3%;
+      width: 50%;
+      left: 26%;
+    }
+    #nonveg h1:before{
+      bottom: 99%;
+      width: 60% !important;
+      left: 20%;
+    }
+    
+    .card-deck .card {
+        margin: 4px 6px !important;
+      }
+     
+  }
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 48.7% !important;
+      flex: 0 0 48.7% !important;
+    }
+    #veg h1::before{
+      bottom: 98.5% !important;
+  }
+    #nonveg h1::before{
+      bottom: 97.5% !important;
+      width: 40%;
+      left: 30%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32% !important;
+    }
+    #veg h1::before{
+      bottom: 98.5% !important;
+  }
+    #nonveg h1::before{
+      bottom: 97.5% !important;
+      width: 40%;
+      left: 30%;  }
+  }
+  
+  @media (min-width: 992px)
+  {
+    .card-deck .card {
+      -ms-flex: 0 0 24%;
+      flex: 0 0 24% !important;
+    }
+  }
